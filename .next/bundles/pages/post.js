@@ -1,9 +1,9 @@
 module.exports =
 
-        __NEXT_REGISTER_PAGE('/about', function() {
+        __NEXT_REGISTER_PAGE('/post', function() {
           var comp = 
       webpackJsonp([5],[],[3])
           return { page: comp.default }
         })
       ;
-//# sourceMappingURL=about.js.map
+//# sourceMappingURL=post.js.map

@@ -90,7 +90,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3bcde9f6193b81e70794"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "dd52465a8b30fe8616c7"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -755,7 +755,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"commons","1":"main.js","2":"bundles/pages/_error.js","4":"bundles/pages/index.js","5":"bundles/pages/about.js"}[chunkId]||chunkId) + "-" + {"0":"edc447e926749be6301e","1":"309311f1fd266f3f58b2","2":"4d097e5dbe4836f75cef","4":"81ff11924f159dbd7ecd","5":"60b512c8cee1647fb839"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"commons","1":"main.js","2":"bundles/pages/_error.js","4":"bundles/pages/index.js","5":"bundles/pages/post.js"}[chunkId]||chunkId) + "-" + {"0":"be06cb542ca4a836925d","1":"309311f1fd266f3f58b2","2":"4d097e5dbe4836f75cef","4":"81ff11924f159dbd7ecd","5":"a702cf2e8ede8d7643d2"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -33346,88 +33346,6 @@ module.exports = function(hash, moduleMap, options) {
 
 /***/ }),
 
-/***/ "./pages/about.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_MyLayout_js__ = __webpack_require__("./components/MyLayout.js");
-var _jsxFileName = '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/about.js';
-
-
-(function () {
-   var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
-
-   enterModule && enterModule(module);
-})();
-
-// pages/about.js
-
-
-
-var _default = function _default() {
-   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1__components_MyLayout_js__["a" /* default */],
-      {
-         __source: {
-            fileName: _jsxFileName,
-            lineNumber: 6
-         }
-      },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-         'p',
-         {
-            __source: {
-               fileName: _jsxFileName,
-               lineNumber: 7
-            }
-         },
-         'This is the about page'
-      )
-   );
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (_default);
-;
-
-(function () {
-   var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
-
-   var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
-
-   if (!reactHotLoader) {
-      return;
-   }
-
-   reactHotLoader.register(_default, 'default', '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/about.js');
-   leaveModule(module);
-})();
-
-;
-    (function (Component, route) {
-      if(!Component) return
-      if (false) return
-      module.hot.accept()
-      Component.__route = route
-
-      if (module.hot.status() === 'idle') return
-
-      var components = next.router.components
-      for (var r in components) {
-        if (!components.hasOwnProperty(r)) continue
-
-        if (components[r].Component.__route === route) {
-          next.router.update(r, Component)
-        }
-      }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/about")
-  
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/next/node_modules/webpack/buildin/harmony-module.js")(module)))
-
-/***/ }),
-
 /***/ "./pages/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -33435,56 +33353,112 @@ var _default = function _default() {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_MyLayout__ = __webpack_require__("./components/MyLayout.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_MyLayout_js__ = __webpack_require__("./components/MyLayout.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_link__ = __webpack_require__("./node_modules/next/link.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_link__);
 var _jsxFileName = '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/index.js';
 
 
 (function () {
-   var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
 
-   enterModule && enterModule(module);
+  enterModule && enterModule(module);
 })();
 
-// pages/index.js
 
 
 
-var _default = function _default() {
-   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1__components_MyLayout__["a" /* default */],
-      {
-         __source: {
-            fileName: _jsxFileName,
-            lineNumber: 6
-         }
+var PostLink = function PostLink(props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'li',
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 5
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_2_next_link___default.a,
+      { as: '/p/' + props.id, href: '/post?title=' + props.title, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-         'p',
-         {
-            __source: {
-               fileName: _jsxFileName,
-               lineNumber: 7
-            }
-         },
-         'Hello Next.js'
+        'a',
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 7
+          }
+        },
+        props.title
       )
-   );
+    )
+  );
+};
+
+var _default = function _default() {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_1__components_MyLayout_js__["a" /* default */],
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h1',
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        }
+      },
+      'My Blog'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'ul',
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(PostLink, { id: 'hello-nextjs', title: 'Hello Next.js', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        }
+      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(PostLink, { id: 'learn-nextjs', title: 'Learn Next.js is awesome', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        }
+      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(PostLink, { id: 'deploy-nextjs', title: 'Deploy apps with Zeit', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        }
+      })
+    )
+  );
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
 
 (function () {
-   var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
 
-   var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
 
-   if (!reactHotLoader) {
-      return;
-   }
+  if (!reactHotLoader) {
+    return;
+  }
 
-   reactHotLoader.register(_default, 'default', '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/index.js');
-   leaveModule(module);
+  reactHotLoader.register(PostLink, 'PostLink', '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/index.js');
+  reactHotLoader.register(_default, 'default', '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/index.js');
+  leaveModule(module);
 })();
 
 ;
@@ -33505,6 +33479,114 @@ var _default = function _default() {
         }
       }
     })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
+  
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/next/node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./pages/post.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_MyLayout_js__ = __webpack_require__("./components/MyLayout.js");
+var _jsxFileName = '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/post.js';
+
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+
+
+var Content = function Content(props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'div',
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 4
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h1',
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 5
+        }
+      },
+      props.url.query.title
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        }
+      },
+      'This is the blog post content.'
+    )
+  );
+};
+
+var _default = function _default(props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_1__components_MyLayout_js__["a" /* default */],
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Content, { url: props.url, __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      }
+    })
+  );
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(Content, 'Content', '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/post.js');
+  reactHotLoader.register(_default, 'default', '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/post.js');
+  leaveModule(module);
+})();
+
+;
+    (function (Component, route) {
+      if(!Component) return
+      if (false) return
+      module.hot.accept()
+      Component.__route = route
+
+      if (module.hot.status() === 'idle') return
+
+      var components = next.router.components
+      for (var r in components) {
+        if (!components.hasOwnProperty(r)) continue
+
+        if (components[r].Component.__route === route) {
+          next.router.update(r, Component)
+        }
+      }
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/post")
   
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/next/node_modules/webpack/buildin/harmony-module.js")(module)))
 
@@ -33539,7 +33621,7 @@ module.exports = __webpack_require__("./pages/index.js");
 /***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/about.js");
+module.exports = __webpack_require__("./pages/post.js");
 
 
 /***/ })
