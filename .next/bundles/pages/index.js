@@ -2,7 +2,7 @@ module.exports =
 
         __NEXT_REGISTER_PAGE('/', function() {
           var comp = 
-      webpackJsonp([4],[],[2])
+      webpackJsonp([5],[],[3])
           return { page: comp.default }
         })
       ;

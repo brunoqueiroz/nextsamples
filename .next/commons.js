@@ -32797,7 +32797,7 @@ module.exports = __webpack_require__("./node_modules/next/dist/pages/_error.js")
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/index.js");
+module.exports = __webpack_require__("./pages/post.js");
 
 
 /***/ }),
@@ -32805,7 +32805,7 @@ module.exports = __webpack_require__("./pages/index.js");
 /***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/post.js");
+module.exports = __webpack_require__("./pages/index.js");
 
 
 /***/ })
