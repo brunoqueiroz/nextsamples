@@ -90,7 +90,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "66fa4ca5c1b1bf65f4c2"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "88ffbe3214a6ebe4732f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -755,7 +755,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"commons","1":"main.js","2":"bundles/pages/_error.js","4":"bundles/pages/post.js","5":"bundles/pages/index.js"}[chunkId]||chunkId) + "-" + {"0":"f7e38c5b61083660719a","1":"309311f1fd266f3f58b2","2":"4d097e5dbe4836f75cef","4":"25ec8982fea0f86784b0","5":"63c5f393d546cab2fbad"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"commons","1":"main.js","2":"bundles/pages/_error.js","4":"bundles/pages/index.js","5":"bundles/pages/post.js"}[chunkId]||chunkId) + "-" + {"0":"8ff00990feb6a844f477","1":"309311f1fd266f3f58b2","2":"4d097e5dbe4836f75cef","4":"81ff11924f159dbd7ecd","5":"a702cf2e8ede8d7643d2"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -6503,6 +6503,14 @@ module.exports = {
   NOT_EXTENDED: 510,
   NETWORK_AUTHENTICATION_REQUIRED: 511
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/isomorphic-unfetch/browser.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = window.fetch || (window.fetch = __webpack_require__("./node_modules/unfetch/dist/unfetch.es.js").default || __webpack_require__("./node_modules/unfetch/dist/unfetch.es.js"));
 
 
 /***/ }),
@@ -33351,11 +33359,16 @@ module.exports = function(hash, moduleMap, options) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_MyLayout_js__ = __webpack_require__("./components/MyLayout.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_link__ = __webpack_require__("./node_modules/next/link.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_link__);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__("./node_modules/babel-runtime/regenerator/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_MyLayout_js__ = __webpack_require__("./components/MyLayout.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_link__ = __webpack_require__("./node_modules/next/link.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_link__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch__ = __webpack_require__("./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch__);
+
 var _jsxFileName = '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/index.js';
 
 
@@ -33365,85 +33378,105 @@ var _jsxFileName = '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/
   enterModule && enterModule(module);
 })();
 
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 
 
-var PostLink = function PostLink(props) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'li',
+
+
+var Index = function Index(props) {
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_2__components_MyLayout_js__["a" /* default */],
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 5
+        lineNumber: 6
       }
     },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_2_next_link___default.a,
-      { as: '/p/' + props.id, href: '/post?title=' + props.title, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 6
-        }
-      },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'a',
-        {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 7
-          }
-        },
-        props.title
-      )
-    )
-  );
-};
-
-var _default = function _default() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_1__components_MyLayout_js__["a" /* default */],
-    {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      }
-    },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
       'h1',
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 7
         }
       },
-      'My Blog'
+      'Batman TV Shows'
     ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
       'ul',
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 8
         }
       },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(PostLink, { id: 'hello-nextjs', title: 'Hello Next.js', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        }
-      }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(PostLink, { id: 'learn-nextjs', title: 'Learn Next.js is awesome', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        }
-      }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(PostLink, { id: 'deploy-nextjs', title: 'Deploy apps with Zeit', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        }
+      props.shows.map(function (_ref) {
+        var show = _ref.show;
+        return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'li',
+          { key: show.id, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 10
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_3_next_link___default.a,
+            { as: '/p/' + show.id, href: '/post?id=' + show.id, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 11
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+              'a',
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 12
+                }
+              },
+              show.name
+            )
+          )
+        );
       })
     )
   );
 };
 
+Index.getInitialProps = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+  var res, data;
+  return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 2;
+          return __WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch___default()('https://api.tvmaze.com/search/shows?q=batman');
+
+        case 2:
+          res = _context.sent;
+          _context.next = 5;
+          return res.json();
+
+        case 5:
+          data = _context.sent;
+
+
+          console.log('Show data fetched. Count: ' + data.length);
+
+          return _context.abrupt('return', {
+            shows: data
+          });
+
+        case 8:
+        case 'end':
+          return _context.stop();
+      }
+    }
+  }, _callee, this);
+}));
+
+var _default = Index;
 /* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
 
@@ -33456,7 +33489,7 @@ var _default = function _default() {
     return;
   }
 
-  reactHotLoader.register(PostLink, 'PostLink', '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/index.js');
+  reactHotLoader.register(Index, 'Index', '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/index.js');
   reactHotLoader.register(_default, 'default', '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/index.js');
   leaveModule(module);
 })();
@@ -33489,9 +33522,14 @@ var _default = function _default() {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_MyLayout_js__ = __webpack_require__("./components/MyLayout.js");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__("./node_modules/babel-runtime/regenerator/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_MyLayout_js__ = __webpack_require__("./components/MyLayout.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch__ = __webpack_require__("./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch__);
+
 var _jsxFileName = '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/post.js';
 
 
@@ -33501,57 +33539,86 @@ var _jsxFileName = '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/
   enterModule && enterModule(module);
 })();
 
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 
-var Content = function Content(props) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'div',
+
+
+var Post = function Post(props) {
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_2__components_MyLayout_js__["a" /* default */],
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 4
+        lineNumber: 5
       }
     },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
       'h1',
-      {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 5
-        }
-      },
-      props.url.query.title
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'p',
       {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 6
         }
       },
-      'This is the blog post content.'
-    )
-  );
-};
-
-var _default = function _default(props) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_1__components_MyLayout_js__["a" /* default */],
-    {
-      __source: {
+      props.show.name
+    ),
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+      'p',
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        }
+      },
+      props.show.summary.replace(/<[/]?p>/g, '')
+    ),
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('img', { src: props.show.image.medium, __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
-      }
-    },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Content, { url: props.url, __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 8
       }
     })
   );
 };
 
+Post.getInitialProps = function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee(context) {
+    var id, res, show;
+    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            id = context.query.id;
+            _context.next = 3;
+            return __WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch___default()('https://api.tvmaze.com/shows/' + id);
+
+          case 3:
+            res = _context.sent;
+            _context.next = 6;
+            return res.json();
+
+          case 6:
+            show = _context.sent;
+
+
+            console.log('Fetched show: ' + show.name);
+
+            return _context.abrupt('return', { show: show });
+
+          case 9:
+          case 'end':
+            return _context.stop();
+        }
+      }
+    }, _callee, this);
+  }));
+
+  return function (_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
+
+var _default = Post;
 /* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
 
@@ -33564,7 +33631,7 @@ var _default = function _default(props) {
     return;
   }
 
-  reactHotLoader.register(Content, 'Content', '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/post.js');
+  reactHotLoader.register(Post, 'Post', '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/post.js');
   reactHotLoader.register(_default, 'default', '/Users/brunoqueiroz/Documents/Desenvolvimento/estudos/react/my-app/pages/post.js');
   leaveModule(module);
 })();
@@ -33613,7 +33680,7 @@ module.exports = __webpack_require__("./node_modules/next/dist/pages/_error.js")
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/post.js");
+module.exports = __webpack_require__("./pages/index.js");
 
 
 /***/ }),
@@ -33621,7 +33688,7 @@ module.exports = __webpack_require__("./pages/post.js");
 /***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/index.js");
+module.exports = __webpack_require__("./pages/post.js");
 
 
 /***/ })
